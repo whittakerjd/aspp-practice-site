@@ -150,6 +150,18 @@ nav {
 
 /*video player*/
 
+.landing-video div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 4rem;
+    color: #fafafa;
+    text-shadow: 2px 2px #6e6e6e;
+    margin-bottom: -2rem
+}
+
 .landing-video h1 {
     font-size: 4rem;
     display: flex;
