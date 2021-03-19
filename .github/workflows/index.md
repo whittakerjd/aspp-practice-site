@@ -7,6 +7,8 @@
     <title>ASPP</title>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -60,7 +62,11 @@
     </header>
 
     <section class="landing-video">
-        <h1>Recent Broadcast</h1>
+        <div class="container">
+
+            <h1>Recent Broadcast</h1>
+
+        </div>
         <div class="container">
             <div class="video-player">
                 <iframe src="https://www.youtube.com/embed/GI8AII0O1dQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -89,7 +95,6 @@
 
 
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
 </body>
 
