@@ -153,6 +153,7 @@ nav {
 .landing-video {
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 
 .landing-video .container {
