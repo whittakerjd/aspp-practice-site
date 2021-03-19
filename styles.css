@@ -159,7 +159,8 @@ nav {
     font-size: 4rem;
     color: #fafafa;
     text-shadow: 2px 2px #6e6e6e;
-    margin-bottom: -2rem
+    margin-bottom: -2rem;
+    text-align: center;
 }
 
 .landing-video h1 {
