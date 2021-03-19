@@ -150,6 +150,10 @@ nav {
 
 /*video player*/
 
+.landing-video {
+    text-align: center;
+}
+
 .landing-video div {
     display: flex;
     width: 100%;
