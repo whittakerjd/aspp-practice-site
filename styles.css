@@ -73,7 +73,11 @@ nav {
 }
 
 .nav-brand {
-    width: 3.5rem;
+    width: ;
+}
+
+.nav-brand a img {
+    border-radius: 50%;
 }
 
 .menu-icons i {
@@ -299,12 +303,14 @@ footer p {
     text-shadow: 2px 2px #6e6e6e;
 }
 
-.social-icons:hover {
+
+/*.social-icons:hover {
     transform: scale(1.1);
-}
+}*/
 
 .social-icons a:hover {
-    color: rgba(0, 200, 231, .5);
+    opacity: .7;
+    text-shadow: 2px 2px #6e6e6e;
 }
 
 
