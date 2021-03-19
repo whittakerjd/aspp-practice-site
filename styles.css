@@ -163,16 +163,6 @@ nav {
     text-align: center;
 }
 
-.landing-video h1 {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fafafa;
-    margin: 5rem 0 0 0;
-    text-shadow: 2px 2px #6e6e6e;
-}
-
 .video-player {
     margin: 5rem 0 0 0;
     position: relative;
@@ -358,5 +348,11 @@ footer p {
     }
     .nav-link:hover {
         color: #fafafa;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (orientation: portrait) {
+    .landing-video h1 {
+        text-align: center;
     }
 }
