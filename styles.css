@@ -351,8 +351,8 @@ footer p {
     }
 }
 
-@media screen and (min-width: 768px) and (orientation: portrait) {
-    .landing-video h1 {
+@media screen and (orientation: portrait) {
+    .landing-video div {
         text-align: center;
     }
 }
