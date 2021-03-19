@@ -152,6 +152,7 @@ nav {
 
 .landing-video {
     text-align: center;
+    width: 100%;
 }
 
 .landing-video div {
@@ -160,7 +161,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #fafafa;
     text-shadow: 2px 2px #6e6e6e;
     margin-bottom: -2rem;
