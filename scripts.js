@@ -11,3 +11,7 @@ selectElement('.closed').addEventListener('click', () => {
 window.addEventListener('resize', () => {
     selectElement('.nav-list').classList.remove('active');
 });
+
+selectElement('.nav-item').addEventListener('click', () => {
+    selectElement('.nav-link').classList.add('current');
+});
