@@ -39,7 +39,7 @@
                                                                                                                                                                                         }
                                                                                                                                                                                         
                                                                                                                                                                                         body {
-                                                                                                                                                                                            background: linear-gradient(rgba(1, 170, 199, .3), rgba(254, 134, 110, .5) 40%, rgba(254, 178, 90, .7)), url("https://cdn.pixabay.com/photo/2016/08/29/23/26/austin-1629454_960_720.jpg") center no-repeat;
+                                                                                                                                                                                            background: linear-gradient(rgba(1, 170, 199, .3), rgba(254, 134, 110, .5) 40%, rgba(254, 178, 90, .7)), url("https://pixahive.com/wp-content/uploads/2020/09/Clouds-in-the-Sky-94745-pixahive.jpg") bottom no-repeat;
                                                                                                                                                                                             background-size: cover;
                                                                                                                                                                                         }
                                                                                                                                                                                         /*header*/
@@ -267,13 +267,6 @@
                                                                                                                                                                                             align-items: center;
                                                                                                                                                                                         }
                                                                                                                                                                                         
-                                                                                                                                                                                        .grid {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            flex-direction: column;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
                                                                                                                                                                                         .video-grid {
                                                                                                                                                                                             display: flex;
                                                                                                                                                                                             flex-direction: column;
@@ -281,6 +274,9 @@
                                                                                                                                                                                             width: 100%;
                                                                                                                                                                                             padding-top: 56.25%;
                                                                                                                                                                                             border-style: solid;
+                                                                                                                                                                                            border-style: none;
+                                                                                                                                                                                            margin: 0 0 50px 0;
+                                                                                                                                                                                            margin
                                                                                                                                                                                         }
                                                                                                                                                                                         /*footer*/
                                                                                                                                                                                         
