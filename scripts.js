@@ -18,7 +18,7 @@ selectElement('.nav-item').addEventListener('click', () => {
 
 document.addEventListener("scroll", function() {
     const nav = document.querySelector("header div.container");
-    const navHeight = 0;
+    const navHeight = .1;
 
     const distanceFromTop = Math.abs(
         document.body.getBoundingClientRect().top
