@@ -15,15 +15,3 @@ window.addEventListener('resize', () => {
 selectElement('.nav-item').addEventListener('click', () => {
     selectElement('.nav-link').classList.add('current');
 });
-
-document.addEventListener("scroll", function() {
-    const nav = document.querySelector("header div.container");
-    const navHeight = .1;
-
-    const distanceFromTop = Math.abs(
-        document.body.getBoundingClientRect().top
-    );
-
-    if (distanceFromTop >= navHeight) nav.classList.add("fixed-top");
-    else nav.classList.remove("fixed-top");
-});
