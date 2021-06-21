@@ -352,8 +352,6 @@ footer .icon-container {
     justify-content: space-around;
     align-items: center;
     align-content: flex-start;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .copyright-container {
