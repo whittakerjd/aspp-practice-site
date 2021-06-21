@@ -90,16 +90,6 @@ nav {
     width: 6rem;
 }
 
-.nav-brand:hover {
-    /*border-style: solid;
-    border-radius: 50%;
-    border-width: .5px;*/
-}
-
-.nav-brand a img {
-    /*border-radius: 50%;*/
-}
-
 .menu-icons i {
     font-size: 3.5rem;
     color: #000000;
