@@ -69,6 +69,7 @@ section {
 body {
     background-color: #faf7ef;
     background-size: cover;
+    margin: 0 0 0 0;
 }
 
 
@@ -232,7 +233,7 @@ marquee {
 
 .landing-video {
     width: 100%;
-    max-width: 98rem;
+    max-width: 140rem;
 }
 
 .landing-video .container {
@@ -240,7 +241,7 @@ marquee {
     overflow: hidden;
     height: 0;
     padding-bottom: 56.25%;
-    margin: 0 0 0 2rem;
+    margin: 0 2rem 0 2rem;
 }
 
 .landing-video .container iframe {
@@ -282,7 +283,7 @@ marquee {
 .grid-container {
     display: flex;
     max-width: 120rem;
-    margin: 2rem 0 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
 }
 
 .grid1 {
@@ -331,6 +332,7 @@ footer {
     z-index: 0;
     background-color: #000000;
     margin-top: 2rem;
+    margin-right 0;
 }
 
 footer p {
