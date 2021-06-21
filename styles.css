@@ -1,438 +1,489 @@
-                                                                                                                                                                                        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-                                                                                                                                                                                        /*Global styles*/
-                                                                                                                                                                                        
-                                                                                                                                                                                        *,
-                                                                                                                                                                                        *::before,
-                                                                                                                                                                                        *::after {
-                                                                                                                                                                                            margin: 0;
-                                                                                                                                                                                            padding: 0;
-                                                                                                                                                                                            box-sizing: inherit;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        html {
-                                                                                                                                                                                            font-family: 'Montserrat', sans-serif;
-                                                                                                                                                                                            font-size: 10px;
-                                                                                                                                                                                            box-sizing: border-box;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        a {
-                                                                                                                                                                                            text-decoration: none !important;
-                                                                                                                                                                                            color: #000000;
-                                                                                                                                                                                            font-size: 1.6rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        ul {
-                                                                                                                                                                                            list-style: none;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        p {
-                                                                                                                                                                                            font-size: 1.6rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        h2 {
-                                                                                                                                                                                            font-size: 2.5rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        img {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            max-width: 100%;
-                                                                                                                                                                                            height: auto;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        section {
-                                                                                                                                                                                            padding: 5rem 0;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        body {
-                                                                                                                                                                                            background-color: #faf7ef;
-                                                                                                                                                                                            background-size: cover;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        /*header*/
-                                                                                                                                                                                        
-                                                                                                                                                                                        header {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            height: 5rem;
-                                                                                                                                                                                            position: absolute;
-                                                                                                                                                                                            top: -1.5rem;
-                                                                                                                                                                                            left: 0;
-                                                                                                                                                                                            z-index: 1;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .container {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            max-width: 98rem;
-                                                                                                                                                                                            margin: 0 auto;
-                                                                                                                                                                                            padding: 1.5rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        nav {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                            justify-content: space-between;
-                                                                                                                                                                                            padding: 1rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-brand {
-                                                                                                                                                                                            width: 3.5rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-brand:hover {
-                                                                                                                                                                                            border-style: solid;
-                                                                                                                                                                                            border-radius: 50%;
-                                                                                                                                                                                            border-width: .5px;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-brand a img {
-                                                                                                                                                                                            border-radius: 50%;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .menu-icons i {
-                                                                                                                                                                                            font-size: 3.5rem;
-                                                                                                                                                                                            color: #000000;
-                                                                                                                                                                                            cursor: pointer;
-                                                                                                                                                                                            text-shadow: 2px 2px #6e6e6e;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .closed i {
-                                                                                                                                                                                            color: #000000;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-list {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            height: 100vh;
-                                                                                                                                                                                            background: linear-gradient(rgba(1, 170, 199, .3), rgba(254, 134, 110, .5) 40%, rgba(254, 178, 90, .7)), url("images/white.png");
-                                                                                                                                                                                            background-size: cover;
-                                                                                                                                                                                            position: fixed;
-                                                                                                                                                                                            top: 0;
-                                                                                                                                                                                            right: -101%;
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            flex-direction: column;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            z-index: 1500;
-                                                                                                                                                                                            transition: all 450ms ease-in-out;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-list.active {
-                                                                                                                                                                                            right: 0;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .closed {
-                                                                                                                                                                                            position: absolute;
-                                                                                                                                                                                            top: 1rem;
-                                                                                                                                                                                            left: 1.5rem;
-                                                                                                                                                                                            /*text-shadow: 2px 1px #6e6e6e;*/
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-item {
-                                                                                                                                                                                            margin: 1.5rem 0;
-                                                                                                                                                                                            padding: 1rem;
-                                                                                                                                                                                            width: 90%;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            text-align: center;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-item:hover {
-                                                                                                                                                                                            /*transform: scale(1.1);*/
-                                                                                                                                                                                            transition: .3s ease-in-out;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-link {
-                                                                                                                                                                                            font-size: 1.6rem;
-                                                                                                                                                                                            text-transform: uppercase;
-                                                                                                                                                                                            color: #000000;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .nav-link:hover {
-                                                                                                                                                                                            color: rgba(255, 255, 255);
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .menu-icons:hover {
-                                                                                                                                                                                            transform: scale(1.2);
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .fixed-top {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            height: 5.5rem;
-                                                                                                                                                                                            position: fixed;
-                                                                                                                                                                                            z-index: 1;
-                                                                                                                                                                                            background-color: #faf7ef;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                            max-width: 98rem;
-                                                                                                                                                                                            margin: 1.5rem auto;
-                                                                                                                                                                                            left: 50%;
-                                                                                                                                                                                            transform: translateX(-50%);
-                                                                                                                                                                                            border-bottom: 1px solid rgba(0, 0, 0, .2);
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        marquee {
-                                                                                                                                                                                            background-color: #000000;
-                                                                                                                                                                                            color: #fafafa;
-                                                                                                                                                                                            font-size: 2rem;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            /*position: fixed;
-                                                                                                                                                                                            left: 50%;
-                                                                                                                                                                                            transform: translate(-50%);
-                                                                                                                                                                                            */
-                                                                                                                                                                                            padding: 1rem;
-                                                                                                                                                                                            max-width: 98rem;
-                                                                                                                                                                                            border-radius: 25px;
-                                                                                                                                                                                            position: relative;
-                                                                                                                                                                                            top: 55px;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        /*video player*/
-                                                                                                                                                                                        
-                                                                                                                                                                                        .landing-video {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            flex-direction: column;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .landing-video .container {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            text-align: center;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            text-align: center;
-                                                                                                                                                                                            margin-bottom: -5rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .landing-video h1 {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            margin-top: 5rem;
-                                                                                                                                                                                            font-size: 5rem;
-                                                                                                                                                                                            color: #000000;
-                                                                                                                                                                                            text-align: center;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .video-player {
-                                                                                                                                                                                            margin: 5rem 0 0 0;
-                                                                                                                                                                                            position: relative;
-                                                                                                                                                                                            overflow: hidden;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            padding-top: 56.25%;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        iframe {
-                                                                                                                                                                                            position: absolute;
-                                                                                                                                                                                            top: 0;
-                                                                                                                                                                                            left: 0;
-                                                                                                                                                                                            bottom: 0;
-                                                                                                                                                                                            right: 0;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            height: 100%;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        /*hero*/
-                                                                                                                                                                                        
-                                                                                                                                                                                        .hero {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            height: 80vh;
-                                                                                                                                                                                            text-align: left;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .main-message {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            max-width: 50rem;
-                                                                                                                                                                                            color: #000000;
-                                                                                                                                                                                            text-transform: uppercase;
-                                                                                                                                                                                            transform: translateY(5%);
-                                                                                                                                                                                            backdrop-filter: blur(20px);
-                                                                                                                                                                                            border-radius: 15px;
-                                                                                                                                                                                            padding: 2rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .main-message p {
-                                                                                                                                                                                            text-transform: lowercase;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .cta {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .btn {
-                                                                                                                                                                                            border-radius: 2rem;
-                                                                                                                                                                                            display: inline-block;
-                                                                                                                                                                                            background-color: rgba(1, 170, 199);
-                                                                                                                                                                                            padding: 1rem 2.5rem;
-                                                                                                                                                                                            text-transform: uppercase;
-                                                                                                                                                                                            transition: opacity .03s ease-in-out;
-                                                                                                                                                                                            color: white;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .btn:hover {
-                                                                                                                                                                                            background-color: rgba(1, 160, 175);
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .hero .container {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            align-items: left;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .video-grid {
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            flex-direction: column;
-                                                                                                                                                                                            position: relative;
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            padding-top: 56.25%;
-                                                                                                                                                                                            border-style: solid;
-                                                                                                                                                                                            border-style: none;
-                                                                                                                                                                                            margin: 0 0 50px 0;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        /*grid*/
-                                                                                                                                                                                        
-                                                                                                                                                                                        .grid1 {
-                                                                                                                                                                                            display: grid;
-                                                                                                                                                                                            grid-template-columns: repeat(3, 1fr);
-                                                                                                                                                                                            grid-template-rows: 1fr 1fr;
-                                                                                                                                                                                            gap: 20px
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .grid2 {
-                                                                                                                                                                                            display: grid;
-                                                                                                                                                                                            grid-template-columns: repeat(4, 1fr);
-                                                                                                                                                                                            gap: 20px
-                                                                                                                                                                                        }
-                                                                                                                                                                                        /*footer*/
-                                                                                                                                                                                        
-                                                                                                                                                                                        footer .container {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            max-width: 98rem;
-                                                                                                                                                                                            margin: 0 auto;
-                                                                                                                                                                                            padding: 1.5rem;
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            justify-content: space-evenly;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .copyright {
-                                                                                                                                                                                            /*border-top: 1px solid rgba(255, 255, 255, .2);*/
-                                                                                                                                                                                            padding: .8rem;
-                                                                                                                                                                                            width: 98%;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        footer {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                            height: 15rem;
-                                                                                                                                                                                            z-index: 1;
-                                                                                                                                                                                            background-color: #000000;
-                                                                                                                                                                                            backdrop-filter: blur(20px);
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        footer p {
-                                                                                                                                                                                            padding: .5rem 0 0rem 0;
-                                                                                                                                                                                            margin: 0rem 0 -2rem 0;
-                                                                                                                                                                                            display: flex;
-                                                                                                                                                                                            text-align: center;
-                                                                                                                                                                                            justify-content: center;
-                                                                                                                                                                                            align-items: center;
-                                                                                                                                                                                            color: #fafafa;
-                                                                                                                                                                                            font-size: 1rem;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .social-icons i {
-                                                                                                                                                                                            margin: -1rem;
-                                                                                                                                                                                            font-size: 3.5rem;
-                                                                                                                                                                                            color: #fafafa;
-                                                                                                                                                                                            cursor: pointer;
-                                                                                                                                                                                            text-shadow: 2px 2px #6e6e6e;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .social-icons a:hover {
-                                                                                                                                                                                            opacity: .7;
-                                                                                                                                                                                            text-shadow: 2px 2px #6e6e6e;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        /*media queries*/
-                                                                                                                                                                                        
-                                                                                                                                                                                        @media screen and (min-width: 900px) {
-                                                                                                                                                                                            header {
-                                                                                                                                                                                                height: 5rem;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .nav-brand {
-                                                                                                                                                                                                width: 3.5rem;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .nav-list {
-                                                                                                                                                                                                width: initial;
-                                                                                                                                                                                                height: initial;
-                                                                                                                                                                                                background-color: transparent;
-                                                                                                                                                                                                position: initial;
-                                                                                                                                                                                                top: initial;
-                                                                                                                                                                                                right: initial;
-                                                                                                                                                                                                flex-direction: row;
-                                                                                                                                                                                                transition: initial;
-                                                                                                                                                                                                background: none;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .menu-icons {
-                                                                                                                                                                                                display: none;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .nav-item {
-                                                                                                                                                                                                margin: 0 0 0 5rem;
-                                                                                                                                                                                                border-style: none;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .nav-link,
-                                                                                                                                                                                            .current {
-                                                                                                                                                                                                color: #000000;
-                                                                                                                                                                                                position: relative;
-                                                                                                                                                                                                font-size: 1.3rem;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .nav-link::before,
-                                                                                                                                                                                            .current::before {
-                                                                                                                                                                                                content: "";
-                                                                                                                                                                                                position: absolute;
-                                                                                                                                                                                                left: 0;
-                                                                                                                                                                                                bottom: -.5rem;
-                                                                                                                                                                                                background-color: rgb(254, 134, 110);
-                                                                                                                                                                                                width: 100%;
-                                                                                                                                                                                                height: 2px;
-                                                                                                                                                                                                transform: scaleX(0);
-                                                                                                                                                                                                transform-origin: left;
-                                                                                                                                                                                                transition: transform 650ms;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .current::before {
-                                                                                                                                                                                                transform: scaleX(1);
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .nav-link:hover::before {
-                                                                                                                                                                                                transform: scaleX(1);
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .nav-link:hover {
-                                                                                                                                                                                                color: #2a616b;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .fixed-top {
-                                                                                                                                                                                                display: flex;
-                                                                                                                                                                                                width: 100%;
-                                                                                                                                                                                                height: 5.5rem;
-                                                                                                                                                                                                position: fixed;
-                                                                                                                                                                                                z-index: 1;
-                                                                                                                                                                                                backdrop-filter: blur(20px);
-                                                                                                                                                                                                justify-content: center;
-                                                                                                                                                                                                align-items: center;
-                                                                                                                                                                                                max-width: 98rem;
-                                                                                                                                                                                                margin: 1.5rem auto;
-                                                                                                                                                                                                left: 50%;
-                                                                                                                                                                                                transform: translateX(-50%);
-                                                                                                                                                                                            }
-                                                                                                                                                                                            .fixed-top {
-                                                                                                                                                                                                display: flex;
-                                                                                                                                                                                                width: 100%;
-                                                                                                                                                                                                height: 5.5rem;
-                                                                                                                                                                                                position: fixed;
-                                                                                                                                                                                                z-index: 1;
-                                                                                                                                                                                                backdrop-filter: blur(20px);
-                                                                                                                                                                                                justify-content: center;
-                                                                                                                                                                                                align-items: center;
-                                                                                                                                                                                                max-width: 98rem;
-                                                                                                                                                                                                margin: 1.5rem auto;
-                                                                                                                                                                                                left: 50%;
-                                                                                                                                                                                                transform: translateX(-50%);
-                                                                                                                                                                                            }
-                                                                                                                                                                                        }
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+    font-family: VCR;
+    src: url(fonts/VCR_OSD_MONO_1.001.ttf)
+}
+
+
+/*Global styles*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000000;
+    font-size: 2.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Corben', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 5rem 0;
+    justify-content: left;
+}
+
+body {
+    background-color: #faf7ef;
+    background-size: cover;
+}
+
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    z-index: 1;
+    font-family: VCR;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-brand {
+    width: 6rem;
+}
+
+.nav-brand:hover {
+    /*border-style: solid;
+    border-radius: 50%;
+    border-width: .5px;*/
+}
+
+.nav-brand a img {
+    /*border-radius: 50%;*/
+}
+
+.menu-icons i {
+    font-size: 3.5rem;
+    color: #000000;
+    cursor: pointer;
+    text-shadow: 2px 2px #6e6e6e;
+}
+
+.closed i {
+    color: #000000;
+}
+
+.nav-list {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(1, 170, 199, .3), rgba(254, 134, 110, .5) 40%, rgba(254, 178, 90, .7)), url("images/white.png");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: -101%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 450ms ease-in-out;
+}
+
+.nav-list.active {
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.closed {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    /*text-shadow: 2px 1px #6e6e6e;*/
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-item:hover {
+    /*transform: scale(1.1);*/
+    transition: .3s ease-in-out;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255);
+}
+
+.menu-icons:hover {
+    transform: scale(1.2);
+}
+
+.fixed-top {
+    display: flex;
+    width: 100%;
+    height: 5.5rem;
+    position: fixed;
+    z-index: 1;
+    background-color: #faf7ef;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.marquee-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    position: relative;
+    margin-top: 5px;
+}
+
+marquee {
+    background-color: #000000;
+    color: #fafafa;
+    font-size: 2rem;
+    width: 100%;
+    /*position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    */
+    padding: 1rem 0 1rem 0;
+    /*max-width: 98rem;
+    border-radius: 25px;*/
+    position: relative;
+    top: 55px;
+}
+
+.intro-container {
+    width: 100%;
+    max-width: 98rem;
+    position: relative;
+    display: flex;
+    margin: 15rem 0 2rem 1.8rem;
+}
+
+#intro {
+    display: flex;
+    margin: 5rem 0 9rem 0;
+    position: relative;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+/*video player*/
+
+.landing-video {
+    display: flex;
+    width: 100%;
+}
+
+.landing-video .container {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    justify-content: left;
+    margin: -3rem 0 -3rem 0;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    /*margin-top: 5rem;*/
+    font-size: 3rem;
+    color: #000000;
+    text-align: left;
+    font-family: 'Corben', sans-serif;
+    margin-top: 3rem;
+}
+
+.video-player {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+iframe {
+    position: relative;
+    width: 960px;
+    height: 540px;
+}
+
+
+/*hero*/
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    text-align: left;
+}
+
+.main-message {
+    width: 100%;
+    max-width: 50rem;
+    color: #000000;
+    text-transform: uppercase;
+    transform: translateY(5%);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.main-message p {
+    text-transform: lowercase;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 2rem;
+    display: inline-block;
+    background-color: rgba(1, 170, 199);
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: opacity .03s ease-in-out;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    background-color: rgba(1, 160, 175);
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.video-grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-style: solid;
+    border-style: none;
+    margin: 0 0 50px 0;
+}
+
+
+/*grid*/
+
+.grid-container {
+    display: flex;
+    max-width: 120rem;
+    margin: 2rem 0 2rem 2rem;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/*footer*/
+
+footer .icon-container {
+    width: 100%;
+    margin: 0rem 0 0 0;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.copyright-container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: -5rem 0 0 0;
+}
+
+.copyright {
+    /*border-top: 1px solid rgba(255, 255, 255, .2);*/
+    padding: .8rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+}
+
+footer p {
+    padding: .5rem 0 0rem 0;
+    margin: 0rem 0 0 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    font-size: 1rem;
+}
+
+.social-icons i {
+    margin: 0rem;
+    font-size: 3.5rem;
+    color: #fafafa;
+    cursor: pointer;
+    text-shadow: 2px 2px #6e6e6e;
+}
+
+.social-icons a:hover {
+    opacity: .7;
+    text-shadow: 2px 2px #6e6e6e;
+}
+
+.footer-logo {
+    height: 300px;
+    width: 300px;
+    padding: 5rem 0 0 0;
+}
+
+
+/*media queries*/
+
+@media screen and (min-width: 900px) {
+    header {
+        height: 5rem;
+    }
+    .nav-brand {
+        width: 3.5rem;
+    }
+    .nav-list {
+        width: 100%;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+        background: none;
+        flex-basis: content;
+        justify-content: flex-end;
+        max-width: 98rem;
+    }
+    .menu-icons {
+        display: none;
+    }
+    .nav-item {
+        margin: 0 0 0 0;
+        border-style: none;
+    }
+    .nav-link,
+    .current {
+        color: #000000;
+        position: relative;
+        font-size: 1.3rem;
+    }
+    .nav-link::before,
+    .current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.5rem;
+        background-color: rgb(254, 134, 110);
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+    .current::before {
+        transform: scaleX(1);
+    }
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+    .nav-link:hover {
+        color: #2a616b;
+    }
+    .fixed-top {
+        display: flex;
+        width: 100%;
+        height: 5.5rem;
+        position: fixed;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
